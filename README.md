@@ -20,5 +20,17 @@ networks.
 
 Решение 2
 ```rb
-# path/to/your/file.rb
+version: '3'
+
+services:
+
+volumes:
+
+networks:
+  Bobkov-E-O-my-netology-hw:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.5.0.0/16
+          gateway: 10.5.0.1
 ```
