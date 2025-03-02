@@ -203,10 +203,21 @@ Cоздайте Data Source Prometheus (Home -> Connections -> Data sources -> A
 docker-compose.yml целиком;
 скриншот команды docker ps после запуске docker-compose.yml;
 скриншот графика, постоенного на основе вашей метрики.
+
 Решение 7
+
 docker-compose.yml лежит в корневой папке этого репозитрия
 
 2 СКРИНА
+![Снимок 135](https://github.com/user-attachments/assets/18087138-c408-4853-b7dd-e7ca4b45ed70)
+
+![Снимок 136](https://github.com/user-attachments/assets/31d1b975-5c3f-4956-bbd1-bf941509597c)
+
+![Снимок 137](https://github.com/user-attachments/assets/ecbf7d67-09b3-467d-9a19-5566971ce3f1)
+
+
+
+
 
 Задание 8
 Выполните действия:
