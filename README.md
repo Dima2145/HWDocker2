@@ -189,7 +189,8 @@ admin_password = netology
 Запустите сценарий в detached режиме.
 Решение 6
 
-СКРИН
+![Снимок 136](https://github.com/user-attachments/assets/aeed6b5b-83ec-4d3b-ac00-be4c8171bf2d)
+
 
 Задание 7
 Выполните действия.
@@ -208,7 +209,7 @@ docker-compose.yml целиком;
 
 docker-compose.yml лежит в корневой папке этого репозитрия
 
-2 СКРИНА
+
 ![Снимок 135](https://github.com/user-attachments/assets/18087138-c408-4853-b7dd-e7ca4b45ed70)
 
 ![Снимок 136](https://github.com/user-attachments/assets/31d1b975-5c3f-4956-bbd1-bf941509597c)
@@ -227,5 +228,9 @@ docker-compose.yml лежит в корневой папке этого репо
 
 Решение 8
 
-2 СКРИНА
+![Снимок 138](https://github.com/user-attachments/assets/61bf7b55-978c-4c0a-a339-b7fde5e884d6)
+
+![Снимок 139](https://github.com/user-attachments/assets/35cf3037-37d9-484b-a3ac-6f1e9330dd76)
+
+
           
