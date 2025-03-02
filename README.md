@@ -48,7 +48,7 @@ version: '3'
 services:
   prometheus:
     image: prom/prometheus:v2.47.2
-    container_name: Bobkov-E-O-netology-prometheus
+    container_name: RudenkoDI-netology-prometheus
     command: --web.enable-lifecycle --config.file=/etc/prometheus/prometheus.yml
     ports:
       - 9090:9090
@@ -56,7 +56,7 @@ services:
       - ./prometheus:/etc/prometheus
       - prometheus-data:/prometheus
     networks:
-      - Bobkov-E-O-my-netology-hw
+      - RudenkoDI-my-netology-hw
     restart: always
 
 volumes:
@@ -74,7 +74,7 @@ version: '3'
 services:
   prometheus:
     image: prom/prometheus:v2.47.2
-    container_name: Bobkov-E-O-netology-prometheus
+    container_name: RudenkoDI-netology-prometheus
     command: --web.enable-lifecycle --config.file=/etc/prometheus/prometheus.yml
     ports:
       - 9090:9090
@@ -82,16 +82,16 @@ services:
       - ./prometheus:/etc/prometheus
       - prometheus-data:/prometheus
     networks:
-      - Bobkov-E-O-my-netology-hw
+      - RudenkoDI-my-netology-hw
     restart: always
 
   pushgateway:
     image: prom/pushgateway:v1.6.2
-    container_name: Bobkov-E-O-netology-pushgateway
+    container_name: RudenkoDI-netology-pushgateway
     ports:
       - 9091:9091
     networks:
-      - Bobkov-E-O-my-netology-hw
+      - RudenkoDI-my-netology-hw
     depends_on:
       - prometheus
     restart: unless-stopped
@@ -100,14 +100,15 @@ volumes:
   prometheus-data:
 
 networks:
-  Bobkov-E-O-my-netology-hw:
+  RudenkoDI-my-netology-hw:
     driver: bridge
     ipam:
       config:
         - subnet: 10.5.0.0/16
           gateway: 10.5.0.1
 ```
-          Задание 5
+
+Задание 5
 Выполните действия:
 
 Создайте конфигурацию docker-compose для Grafana с именем контейнера <ваши фамилия и инициалы>-netology-grafana.
@@ -121,7 +122,7 @@ version: '3'
 services:
   prometheus:
     image: prom/prometheus:v2.47.2
-    container_name: Bobkov-E-O-netology-prometheus
+    container_name: RudenkoDI-netology-prometheus
     command: --web.enable-lifecycle --config.file=/etc/prometheus/prometheus.yml
     ports:
       - 9090:9090
@@ -129,23 +130,23 @@ services:
       - ./prometheus:/etc/prometheus
       - prometheus-data:/prometheus
     networks:
-      - Bobkov-E-O-my-netology-hw
+      - RudenkoDI-my-netology-hw
     restart: always
 
   pushgateway:
     image: prom/pushgateway:v1.6.2
-    container_name: Bobkov-E-O-netology-pushgateway
+    container_name: RudenkoDI-netology-pushgateway
     ports:
       - 9091:9091
     networks:
-      - Bobkov-E-O-my-netology-hw
+      - RudenkoDI-my-netology-hw
     depends_on:
       - prometheus
     restart: unless-stopped
 
   grafana:
     image: grafana/grafana
-    container_name: Bobkov-E-O-netology-grafana
+    container_name: RudenkoDI-netology-grafana
     environment:
       GF_PATHS_CONFIG: /etc/grafana/custom.ini
     ports:
@@ -154,7 +155,7 @@ services:
       - ./grafana:/etc/grafana
       - grafana-data:/var/lib/grafana
     networks:
-      - Bobkov-E-O-my-netology-hw
+      - RudenkoDI-my-netology-hw
     depends_on:
       - prometheus
     restart: unless-stopped
@@ -164,7 +165,7 @@ volumes:
   grafana-data:
 
 networks:
-  Bobkov-E-O-my-netology-hw:
+  RudenkoDI-my-netology-hw:
     driver: bridge
     ipam:
       config:
@@ -176,7 +177,7 @@ custom.ini :
 ```rb
 [security]
 
-admin_user = BobkovEO
+admin_user = RudenkoDI
 admin_password = netology
 ```
 Задание 6
