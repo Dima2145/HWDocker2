@@ -27,7 +27,7 @@ services:
 volumes:
 
 networks:
-  Bobkov-E-O-my-netology-hw:
+  RudenkoDI-my-netology-hw:
     driver: bridge
     ipam:
       config:
